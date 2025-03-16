@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Week 10 Assignment by Derek McGuire -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Week 10 Assignment Title -->
+    <title>Week 10 Assignment</title>    
+    <!-- Bootstrap Link -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<!-- This is a website that has a table to create playlists -->
+<!-- For Musician/Group (Artist), Song, and YouTube link -->
+
+<!-- Adding class to Body Element -->
+<body class="container">
+    <div class="card">
+        <h1>Playlist Creator</h1>
+        <h3>Week 10 Assignment</h3>
+        <h3>By Derek McGuire</h3>
+    </div>
+    <br>
+    <!-- Beginning Inputs -->
+    <div class="card">
+        <div class="card-body">
+            <!-- First Row for Inputs -->
+            <div class="row">
+                <!-- Div Column -->
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="artist">Artist</label>
+                        <input type="text" class="form-control" id="artist" placeholder="artist">
+                    </div>
+                </div>
+                <!-- Div Column -->
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="song">Song</label>
+                        <input type="text" class="form-control" id="song" placeholder="song">
+                    </div>
+                </div>
+                <!-- Div Column -->
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="song">YouTube Link</label>
+                        <input type="text" class="form-control" id="youtube" placeholder="http://...">
+                    </div>
+                </div>
+            </div>
+            <!-- Second Row for Create Button -->
+            <div>
+                <button id="add" class="btn btn-primary form-control">Submit</button>
+            </div>
+        </div>
+    </div>
+    <!-- End of Inputs -->
+    <br>
+    <br>
+    <!-- Beginning Table -->
+        <table id="list" class="table table-dark table-striped">
+            <tr>
+                <th>#</th>
+                <th>Artist</th>
+                <th>Song</th>
+                <th>YouTube Link</th>
+            </tr>
+        </table>
+
+    <!-- Script to link JavaScript, JQuery, Bootstrap -->
+    <script src="week10assignment.js"></script>
+    <script src="node_modlues/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/js/bootstrap.bundle.js"></script>
+</body>
+</html>
